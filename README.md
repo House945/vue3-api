@@ -33,7 +33,8 @@ https://vue3-api-eight.vercel.app/
 2. Navigate to the project directory:
 
    ```
-   Navigate to the project directory:
+   cd <project-name>
+
    ```
 
 3. Install the dependencies:
