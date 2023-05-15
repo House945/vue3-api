@@ -6,12 +6,15 @@
     v-if="!meals?.length"
     class="flex-col items-center text-center justify-center text-gray-600"
   >
-    <v-img cover class="w-full" src="src/assets/burgir.png" />
+    <v-img cover class="w-full" :src="getImageSrc('burgir.png')" alt="burgir" />
   </div>
 </template>
 
 <script setup>
 import MealItem from "./MealItem.vue";
+const getImageSrc = (fileName) => {
+  return `${import.meta.env.BASE_URL}${fileName}`;
+};
 
 const { meals } = defineProps({
   meals: {
