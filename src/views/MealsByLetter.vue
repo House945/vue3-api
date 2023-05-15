@@ -1,7 +1,7 @@
 <template>
   <v-container class="p-8 pb-0 text-orange-500">
     <h1 class="text-4xl font-bold mb-4">Choose a letter</h1>
-    <div class="flex justify-center gap-2 m-2">
+    <div class="flex justify-center gap-2 m-2 sm:flex-wrap sm:px-2">
       <router-link
         :to="{ name: 'byLetter', params: { letter } }"
         v-for="letter of letters"
