@@ -92,6 +92,7 @@ const toggleMenu = () => {
   showMenu.value = !showMenu.value;
 };
 </script>
+
 <style scoped>
 .mdi {
   font-size: 1.5rem;

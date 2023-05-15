@@ -1,6 +1,8 @@
 <template>
   <v-container class="p-8 pb-0">
-    <h1 class="text-4xl font-bold mb-4 text-orange-500">Top rated meals</h1>
+    <h1 class="text-4xl font-bold mb-4 text-orange-500">
+      What would You like to eat?
+    </h1>
     <v-text-field
       label="Search for meals"
       class="w-full"

@@ -32,6 +32,7 @@
     </v-card-actions>
   </v-card>
 </template>
+
 <script setup>
 const props = defineProps({
   meal: {
@@ -40,6 +41,7 @@ const props = defineProps({
   },
 });
 </script>
+
 <style scoped>
 .bigger:hover {
   transform: scale(1.05); /* Increase the scale value as desired */

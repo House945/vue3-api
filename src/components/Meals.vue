@@ -6,9 +6,6 @@
     v-if="!meals?.length"
     class="flex-col items-center text-center justify-center text-gray-600"
   >
-    <p>
-      There are no available matches meeting your criteria. Please try again.
-    </p>
     <v-img cover class="w-full" src="src/assets/burgir.png" />
   </div>
 </template>
