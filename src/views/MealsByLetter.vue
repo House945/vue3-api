@@ -1,6 +1,6 @@
 <template>
-  <div class="p-8 pb-0 text-orange-500">
-    <h1 class="text-4xl font-bold mb-4">Choose a letter:</h1>
+  <v-container class="p-8 pb-0 text-orange-500">
+    <h1 class="text-4xl font-bold mb-4">Choose a letter</h1>
     <div class="flex justify-center gap-2 m-2">
       <router-link
         :to="{ name: 'byLetter', params: { letter } }"
@@ -11,7 +11,7 @@
       </router-link>
     </div>
     <Meals :meals="meals" />
-  </div>
+  </v-container>
 </template>
 
 <script setup>

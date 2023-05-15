@@ -18,16 +18,16 @@
       <v-btn
         :href="meal.strYoutube"
         target="_blank"
-        class="mr-3 hover:bg-orange-500 hover:text-white"
+        class="hover:bg-orange-500 hover:text-white"
         outlined
-        >Watch on Youtube</v-btn
+        >Youtube</v-btn
       >
       <v-btn
         :href="meal.strSource"
         target="_blank"
-        class="mr-3 hover:bg-orange-500 hover:text-white"
+        class="hover:bg-orange-500 hover:text-white"
         outlined
-        >More Info</v-btn
+        >Info</v-btn
       >
     </v-card-actions>
   </v-card>

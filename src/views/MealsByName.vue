@@ -1,5 +1,6 @@
 <template>
-  <div class="p-8">
+  <v-container class="p-8 pb-0">
+    <h1 class="text-4xl font-bold mb-4 text-orange-500">Top rated meals</h1>
     <v-text-field
       label="Search for meals"
       class="w-full"
@@ -7,8 +8,8 @@
       @change="searchMeals"
       hide-details="auto"
     ></v-text-field>
-  </div>
-  <Meals :meals="meals" />
+    <Meals :meals="meals" />
+  </v-container>
 </template>
 
 <script setup>

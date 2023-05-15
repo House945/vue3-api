@@ -1,13 +1,13 @@
-# Vue3/Vuex/Vuetify/Tailwindcdd
+# Vue3/Vuex/Vuetify/Tailwindcss
 
 ## Description
 
-Utilizing any open API to fetch data. For example, you can explore APIs from public-apis/public-apis.
-Implementing a control that triggers new API calls to update the displayed data dynamically.
+Utilizing open API to fetch data (`https://themealdb.com/api.php`).
+Implemented a control that triggers new API calls to update the displayed data dynamically.
 Including a control that allows users to interact with the data presented on the screen.
-Utilizing Vuex, the state management library for Vue.js, to handle application-level data flow .
+Utilizing Vuex, the state management library for Vue.js, to handle application-level data flow.
 Incorporating Vuetify, a Vue UI framework, to enhance the visual appearance and user experience.
-Ensuring the application has an appealing and professional design.
+Ensuring the application has an appealing and professional design - tailwindcss.
 Aplication deployed at:
 
 ```

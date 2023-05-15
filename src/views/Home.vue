@@ -1,8 +1,10 @@
 <template>
-  <div class="p-8 pb-0 text-orange-500">
-    <h1 class="text-4xl font-bold mb-4">Random Meals</h1>
-  </div>
-  <Meals :meals="meals" />
+  <v-container class="p-8 pb-0">
+    <h1 class="text-4xl font-bold mb-4 text-orange-500">Random Meals</h1>
+    <v-card>
+      <Meals :meals="meals" />
+    </v-card>
+  </v-container>
 </template>
 
 <script setup>

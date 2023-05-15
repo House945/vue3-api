@@ -1,6 +1,16 @@
 <template>
   <v-container class="max-w-[800px] mx-auto">
-    <h1 class="text-5xl font-semibold mb-5">{{ meal.strMeal }}</h1>
+    <div class="flex justify-between items-center">
+      <h1 class="text-5xl font-semibold mb-5 text-orange-500">
+        {{ meal.strMeal }}
+      </h1>
+      <router-link
+        to="/by-name"
+        class="v-btn p-3 hover:bg-orange-500 hover:text-white"
+      >
+        Back to Meals</router-link
+      >
+    </div>
     <v-card>
       <v-img
         :src="meal.strMealThumb"
@@ -46,7 +56,12 @@
         <h2 class="text-2xl font-semibold mb-2">Measures</h2>
         <ul>
           <template v-for="(el, index) of new Array(20)">
-            <li v-if="meal[`strMeasure${index + 1}`]">
+            <li
+              v-if="
+                meal[`strMeasure${index + 1}`] &&
+                meal[`strMeasure${index + 1}`] !== ''
+              "
+            >
               <p>{{ index + 1 }}. {{ meal[`strMeasure${index + 1}`] }}</p>
             </li>
           </template>
@@ -54,14 +69,17 @@
       </v-col>
     </v-row>
     <v-row class="p-3 mt-5">
-      <v-btn :href="meal.strYoutube" target="_blank" color="primary"
+      <v-btn
+        :href="meal.strYoutube"
+        target="_blank"
+        class="mr-3 hover:bg-orange-500 hover:text-white"
         >Watch on Youtube</v-btn
       >
-      <v-btn :href="meal.strSource" target="_blank" color="primary"
+      <v-btn
+        :href="meal.strSource"
+        target="_blank"
+        class="mr-3 hover:bg-orange-500 hover:text-white"
         >More Info</v-btn
-      >
-      <router-link to="/by-name" class="v-btn" color="primary"
-        >Back to Meals</router-link
       >
     </v-row>
   </v-container>

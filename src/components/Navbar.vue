@@ -1,10 +1,10 @@
 <template>
   <header
-    class="bg-white shadow h-16 flex justify-between items-stretch roundex-2xl"
+    class="bg-white shadow h-16 flex justify-between items-stretch rounded-2xl"
   >
     <router-link
       :to="{ name: 'home' }"
-      class="inline-flex items-center h-full px-5 text-orange-500 font-bold"
+      class="inline-flex items-center h-full px-5 text-orange-500 font-semibold"
     >
       Home
     </router-link>
@@ -21,7 +21,7 @@
     </div>
 
     <!-- Desktop Mode -->
-    <div class="hidden md:flex items-center gap-1">
+    <div class="hidden md:flex items-center gap-2">
       <router-link
         :to="{ name: 'byName' }"
         class="inline-flex items-center px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
@@ -36,7 +36,7 @@
       </router-link>
       <router-link
         :to="{ name: 'ingredients' }"
-        class="inline-flex items-center px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
+        class="inline-flex items-center px-3 h-full transition-colors hover:bg-orange-500 hover:text-white"
       >
         Meals By Ingredients
       </router-link>
@@ -60,21 +60,21 @@
         <router-link
           :to="{ name: 'byName' }"
           class="block px-2 py-1 transition-colors hover:bg-orange-500 hover:text-white"
-          @click="closeMenu"
+          @click="toggleMenu"
         >
           Search Meals
         </router-link>
         <router-link
           :to="{ name: 'byLetter' }"
           class="block px-2 py-1 transition-colors hover:bg-orange-500 hover:text-white"
-          @click="closeMenu"
+          @click="toggleMenu"
         >
           Meals By Letter
         </router-link>
         <router-link
           :to="{ name: 'ingredients' }"
           class="block px-2 py-1 transition-colors hover:bg-orange-500 hover:text-white"
-          @click="closeMenu"
+          @click="toggleMenu"
         >
           Meals By Ingredients
         </router-link>
