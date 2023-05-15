@@ -80,9 +80,3 @@ autoprefixer: ^10.4.14
 postcss: ^8.4.23
 tailwindcss: ^3.3.2
 vite: ^4.3.2
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-# vue3-api
