@@ -11,7 +11,7 @@ Ensuring the application has an appealing and professional design - tailwindcss.
 Aplication deployed at:
 
 ```
-tba
+https://vue3-api-eight.vercel.app/
 ```
 
 ## Table of Contents
